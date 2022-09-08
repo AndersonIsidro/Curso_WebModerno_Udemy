@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS!!</title>
+    <style>
+       .selector{
+        color: rgb(1, 1, 43);
+        font-size: 50px;
+        text-align: center;
+        /*multiplos valores*/
+        border: solid 10px rgb(22, 0, 82);
+        font-family: Helvetica, sans-serif;/*neste caso tenta uma fonte e se nao encontrar usa a outra
+        /*funcoes*/
+        width: calc(100% - 40px);
+        background-color: rgb(106, 106, 185);
+       }
+       
+       /*usando pseudo classe- só vai realizar quando passar o mouse por cima*/
+       .selector:hover{
+        background-color: brown;
+       }
+
+       /* Usando pseudo-elemento utilizado em apenas uma parte do texto selecionado ou letra*/
+       .selector::first-letter{
+        font-size: 90px;
+        font-weight: bold;
+       }
+
+       
+
+
+    </style>
+</head>
+
+<body>
+    <div class="selector">Conteúdo</div>
+</body>
+
+</html>
